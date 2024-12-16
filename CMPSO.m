@@ -14,10 +14,11 @@ vlim = 0.25*(xmax-xmin);
 
 %% Parameters of PSO
 
-iterations = 50;            %Number of iterations
+iterations = 20;            %Number of iterations
 particles = 20;             %Population Size
 
-% 
+% Inertia decreases each iteration
+
 wmin = 0.4;                 %Max Inertia Coefficient
 wmax = 0.9;                 %Min Inertia Coefficient
 
@@ -207,3 +208,10 @@ for it = 1:iterations
     end
     disp(' ');
 end
+
+%% Plot
+figure(1);
+plot(ArchEF(:,1),ArchEF(:,2))
+xlabel('S')
+ylabel('T')
+title('Pareto Front')
