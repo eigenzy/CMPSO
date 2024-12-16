@@ -1,14 +1,14 @@
 # Coevolutionary Multiobjective Particle Swarm Optimization (CMPSO) [1]
 
 ## Disclaimer:
-- This repository acts as an implementation of the authors' work in MATLAB.
-- Ensure to download all MATLAB files as some of them are essential *functions* for the execution of *CMPSO.m*. 
+- This repository acts as an implementation of the authors' [1] work in MATLAB.
+- Ensure to download all MATLAB files as they are essential *functions* for the execution of *CMPSO.m*. 
 
 ## Introduction:
 
-Inspired by Zhan et al., the CMPSO algorithm runs a regular particle swarm optimization scheme on multiple swarms (swarm size = number of objectives) and introduces an information sharing algorithm which places the non-dominated solutions in the ***Archive*** matrix in the code. 
+Inspired by Zhan et al., the CMPSO algorithm runs a regular particle swarm optimization scheme on multiple swarms (swarm size = number of objectives) and introduces an information sharing algorithm which outputs a set of non-dominated solutions in the ***Archive*** matrix in the code. 
 
-Further information can be found in the reference paper.
+Further information about the methodology of the algorithm can be found in the reference paper.
 
 ## Table of Variables
 | **Variable** | **Definition** | 
@@ -46,8 +46,8 @@ Further information can be found in the reference paper.
 | dbs  | Density-Based Selection [1] |
 
 ## ***Evaluation Function***:
-Line 32 of CMPSO.m must be set to the evaluation function, create a MATLAB function that takes in **positions** and **swarms** and returns an evaluation of said **positions**.
-- **position**: matrix of input solutions (each row is a solution)
+Line 32 of CMPSO.m must be set to the evaluation function, create your MATLAB function that takes in **positions** and **swarms** and returns an evaluation of said **positions**.
+- **positions**: matrix of input solutions (each row is a solution)
 
 A *for* loop should be used to analyse the evaluation for each row of the **positions** input. 
 
