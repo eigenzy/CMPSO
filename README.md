@@ -1,7 +1,8 @@
 # Coevolutionary Multiobjective Particle Swarm Optimization (CMPSO) [1]
 
 ## Disclaimer:
-This repository acts as an implementation of the authors' work in MATLAB.
+- This repository acts as an implementation of the authors' work in MATLAB.
+- Ensure to download all MATLAB files as some of them are essential *functions* for the execution of *CMPSO.m*. 
 
 ## Introduction:
 
