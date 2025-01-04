@@ -63,7 +63,7 @@ A *for* loop should be used to analyse the evaluation for each row of the **posi
 - Constraint: Volume>200 cm^3
 
 *Results*:
-
+- Using 10 particles and 10 iterations:
 ![Pareto Front](https://github.com/user-attachments/assets/4ab91ac0-647c-4d6f-9275-98811381e334)
 
 
